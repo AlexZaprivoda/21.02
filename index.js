@@ -106,3 +106,11 @@ function run() {
         // button.removeAttribute("disable", "");
     }, 1000);
 }
+
+function ff() {
+    return Math.round(Math.random() * 16).toString(16);
+}
+
+document.body.onclick = function() {
+    this.style.background = `#${ff()}${ff()}${ff()}`;
+};
